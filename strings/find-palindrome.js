@@ -25,3 +25,19 @@ console.log(str1);
 console.log(str2);
 console.log(str3);
 console.log(str4);
+
+
+// Solution 1 using helper methods - spread operator, reverse(), and join('')
+// function palindrome(str) {
+//   debugger;
+//   // return a truthy or falsely value
+//   return [...str].reverse().join('') === str;
+// }
+
+// Solution 2 using every() helper - not an ideal solution
+// every() is used to do a boolean check on every element within an array
+// function palindrome(str) {
+//   return [...str].every((char, index) => {
+//     return char === str[str.length - index - 1];
+//   })
+// }
